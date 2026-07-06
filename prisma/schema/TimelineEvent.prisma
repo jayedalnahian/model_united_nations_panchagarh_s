@@ -1,0 +1,10 @@
+model TimelineEvent {
+  id          String   @id @default(cuid())
+  title       String
+  description String
+  eventDate   DateTime
+  order       Int      @default(0)
+  isActive    Boolean  @default(true)
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+}

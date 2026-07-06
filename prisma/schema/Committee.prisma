@@ -1,0 +1,14 @@
+model Committee {
+    id                 String   @id @default(cuid())
+    name               String
+    slug               String   @unique
+    description        String
+    agendaTopic        String
+    backgroundGuideUrl String?
+    capacity           Int?
+    users              User[]
+    order              Int      @default(0)
+    isActive           Boolean  @default(true)
+    createdAt          DateTime @default(now())
+    updatedAt          DateTime @updatedAt
+}

@@ -1,0 +1,9 @@
+model SiteSettings {
+  id           String   @id @default("singleton")
+  heroTitle    String
+  heroSubtitle String   // tagline
+  heroImageUrl String?
+  ctaText      String   @default("Register Now")
+  ctaLink      String   @default("/register")
+  updatedAt    DateTime @updatedAt
+}

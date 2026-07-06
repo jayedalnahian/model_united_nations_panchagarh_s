@@ -1,0 +1,10 @@
+model Highlight {
+  id        String   @id @default(cuid())
+  icon      String?
+  title     String
+  subtitle  String?
+  order     Int      @default(0)
+  isActive  Boolean  @default(true)
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
