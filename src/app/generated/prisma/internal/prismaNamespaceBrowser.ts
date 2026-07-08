@@ -143,7 +143,7 @@ export const GalleryItemScalarFieldEnum = {
   id: 'id',
   mediaUrl: 'mediaUrl',
   caption: 'caption',
-  type: 'type',
+  descriptin: 'descriptin',
   order: 'order',
   isActive: 'isActive',
   createdAt: 'createdAt',

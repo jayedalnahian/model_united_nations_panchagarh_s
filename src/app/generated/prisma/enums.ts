@@ -9,14 +9,6 @@
 * 🟢 You can import this file directly.
 */
 
-export const GalleryType = {
-  IMAGE: 'IMAGE',
-  VIDEO: 'VIDEO'
-} as const
-
-export type GalleryType = (typeof GalleryType)[keyof typeof GalleryType]
-
-
 export const UserStatus = {
   ACTIVE: 'ACTIVE',
   BANNED: 'BANNED'

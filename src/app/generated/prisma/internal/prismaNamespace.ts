@@ -1478,7 +1478,7 @@ export const GalleryItemScalarFieldEnum = {
   id: 'id',
   mediaUrl: 'mediaUrl',
   caption: 'caption',
-  type: 'type',
+  descriptin: 'descriptin',
   order: 'order',
   isActive: 'isActive',
   createdAt: 'createdAt',
@@ -1689,20 +1689,6 @@ export type IntFieldRefInput<$PrismaModel> = FieldRefInputType<$PrismaModel, 'In
  * Reference to a field of type 'Int[]'
  */
 export type ListIntFieldRefInput<$PrismaModel> = FieldRefInputType<$PrismaModel, 'Int[]'>
-    
-
-
-/**
- * Reference to a field of type 'GalleryType'
- */
-export type EnumGalleryTypeFieldRefInput<$PrismaModel> = FieldRefInputType<$PrismaModel, 'GalleryType'>
-    
-
-
-/**
- * Reference to a field of type 'GalleryType[]'
- */
-export type ListEnumGalleryTypeFieldRefInput<$PrismaModel> = FieldRefInputType<$PrismaModel, 'GalleryType[]'>
     
 
 

@@ -3,7 +3,6 @@ import { faqItemController } from "./faqItem.controller.js";
 import { checkAuth } from "../../middleware/checkAuth.js";
 import { UserRole } from "../../generated/prisma/enums.js";
 import { validateRequest } from "../../middleware/validateRequest.js";
-import { create } from "domain";
 import { createFaqItemValidate, updateFaqItemValidate } from "./faqItem.validate.js";
 
 const router = Router();

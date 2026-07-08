@@ -38,7 +38,7 @@ export type GalleryItemMinAggregateOutputType = {
   id: string | null
   mediaUrl: string | null
   caption: string | null
-  type: $Enums.GalleryType | null
+  descriptin: string | null
   order: number | null
   isActive: boolean | null
   createdAt: Date | null
@@ -49,7 +49,7 @@ export type GalleryItemMaxAggregateOutputType = {
   id: string | null
   mediaUrl: string | null
   caption: string | null
-  type: $Enums.GalleryType | null
+  descriptin: string | null
   order: number | null
   isActive: boolean | null
   createdAt: Date | null
@@ -60,7 +60,7 @@ export type GalleryItemCountAggregateOutputType = {
   id: number
   mediaUrl: number
   caption: number
-  type: number
+  descriptin: number
   order: number
   isActive: number
   createdAt: number
@@ -81,7 +81,7 @@ export type GalleryItemMinAggregateInputType = {
   id?: true
   mediaUrl?: true
   caption?: true
-  type?: true
+  descriptin?: true
   order?: true
   isActive?: true
   createdAt?: true
@@ -92,7 +92,7 @@ export type GalleryItemMaxAggregateInputType = {
   id?: true
   mediaUrl?: true
   caption?: true
-  type?: true
+  descriptin?: true
   order?: true
   isActive?: true
   createdAt?: true
@@ -103,7 +103,7 @@ export type GalleryItemCountAggregateInputType = {
   id?: true
   mediaUrl?: true
   caption?: true
-  type?: true
+  descriptin?: true
   order?: true
   isActive?: true
   createdAt?: true
@@ -201,7 +201,7 @@ export type GalleryItemGroupByOutputType = {
   id: string
   mediaUrl: string
   caption: string | null
-  type: $Enums.GalleryType
+  descriptin: string | null
   order: number
   isActive: boolean
   createdAt: Date
@@ -235,7 +235,7 @@ export type GalleryItemWhereInput = {
   id?: Prisma.StringFilter<"GalleryItem"> | string
   mediaUrl?: Prisma.StringFilter<"GalleryItem"> | string
   caption?: Prisma.StringNullableFilter<"GalleryItem"> | string | null
-  type?: Prisma.EnumGalleryTypeFilter<"GalleryItem"> | $Enums.GalleryType
+  descriptin?: Prisma.StringNullableFilter<"GalleryItem"> | string | null
   order?: Prisma.IntFilter<"GalleryItem"> | number
   isActive?: Prisma.BoolFilter<"GalleryItem"> | boolean
   createdAt?: Prisma.DateTimeFilter<"GalleryItem"> | Date | string
@@ -246,7 +246,7 @@ export type GalleryItemOrderByWithRelationInput = {
   id?: Prisma.SortOrder
   mediaUrl?: Prisma.SortOrder
   caption?: Prisma.SortOrderInput | Prisma.SortOrder
-  type?: Prisma.SortOrder
+  descriptin?: Prisma.SortOrderInput | Prisma.SortOrder
   order?: Prisma.SortOrder
   isActive?: Prisma.SortOrder
   createdAt?: Prisma.SortOrder
@@ -260,7 +260,7 @@ export type GalleryItemWhereUniqueInput = Prisma.AtLeast<{
   NOT?: Prisma.GalleryItemWhereInput | Prisma.GalleryItemWhereInput[]
   mediaUrl?: Prisma.StringFilter<"GalleryItem"> | string
   caption?: Prisma.StringNullableFilter<"GalleryItem"> | string | null
-  type?: Prisma.EnumGalleryTypeFilter<"GalleryItem"> | $Enums.GalleryType
+  descriptin?: Prisma.StringNullableFilter<"GalleryItem"> | string | null
   order?: Prisma.IntFilter<"GalleryItem"> | number
   isActive?: Prisma.BoolFilter<"GalleryItem"> | boolean
   createdAt?: Prisma.DateTimeFilter<"GalleryItem"> | Date | string
@@ -271,7 +271,7 @@ export type GalleryItemOrderByWithAggregationInput = {
   id?: Prisma.SortOrder
   mediaUrl?: Prisma.SortOrder
   caption?: Prisma.SortOrderInput | Prisma.SortOrder
-  type?: Prisma.SortOrder
+  descriptin?: Prisma.SortOrderInput | Prisma.SortOrder
   order?: Prisma.SortOrder
   isActive?: Prisma.SortOrder
   createdAt?: Prisma.SortOrder
@@ -290,7 +290,7 @@ export type GalleryItemScalarWhereWithAggregatesInput = {
   id?: Prisma.StringWithAggregatesFilter<"GalleryItem"> | string
   mediaUrl?: Prisma.StringWithAggregatesFilter<"GalleryItem"> | string
   caption?: Prisma.StringNullableWithAggregatesFilter<"GalleryItem"> | string | null
-  type?: Prisma.EnumGalleryTypeWithAggregatesFilter<"GalleryItem"> | $Enums.GalleryType
+  descriptin?: Prisma.StringNullableWithAggregatesFilter<"GalleryItem"> | string | null
   order?: Prisma.IntWithAggregatesFilter<"GalleryItem"> | number
   isActive?: Prisma.BoolWithAggregatesFilter<"GalleryItem"> | boolean
   createdAt?: Prisma.DateTimeWithAggregatesFilter<"GalleryItem"> | Date | string
@@ -301,7 +301,7 @@ export type GalleryItemCreateInput = {
   id?: string
   mediaUrl: string
   caption?: string | null
-  type?: $Enums.GalleryType
+  descriptin?: string | null
   order?: number
   isActive?: boolean
   createdAt?: Date | string
@@ -312,7 +312,7 @@ export type GalleryItemUncheckedCreateInput = {
   id?: string
   mediaUrl: string
   caption?: string | null
-  type?: $Enums.GalleryType
+  descriptin?: string | null
   order?: number
   isActive?: boolean
   createdAt?: Date | string
@@ -323,7 +323,7 @@ export type GalleryItemUpdateInput = {
   id?: Prisma.StringFieldUpdateOperationsInput | string
   mediaUrl?: Prisma.StringFieldUpdateOperationsInput | string
   caption?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
-  type?: Prisma.EnumGalleryTypeFieldUpdateOperationsInput | $Enums.GalleryType
+  descriptin?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
   order?: Prisma.IntFieldUpdateOperationsInput | number
   isActive?: Prisma.BoolFieldUpdateOperationsInput | boolean
   createdAt?: Prisma.DateTimeFieldUpdateOperationsInput | Date | string
@@ -334,7 +334,7 @@ export type GalleryItemUncheckedUpdateInput = {
   id?: Prisma.StringFieldUpdateOperationsInput | string
   mediaUrl?: Prisma.StringFieldUpdateOperationsInput | string
   caption?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
-  type?: Prisma.EnumGalleryTypeFieldUpdateOperationsInput | $Enums.GalleryType
+  descriptin?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
   order?: Prisma.IntFieldUpdateOperationsInput | number
   isActive?: Prisma.BoolFieldUpdateOperationsInput | boolean
   createdAt?: Prisma.DateTimeFieldUpdateOperationsInput | Date | string
@@ -345,7 +345,7 @@ export type GalleryItemCreateManyInput = {
   id?: string
   mediaUrl: string
   caption?: string | null
-  type?: $Enums.GalleryType
+  descriptin?: string | null
   order?: number
   isActive?: boolean
   createdAt?: Date | string
@@ -356,7 +356,7 @@ export type GalleryItemUpdateManyMutationInput = {
   id?: Prisma.StringFieldUpdateOperationsInput | string
   mediaUrl?: Prisma.StringFieldUpdateOperationsInput | string
   caption?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
-  type?: Prisma.EnumGalleryTypeFieldUpdateOperationsInput | $Enums.GalleryType
+  descriptin?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
   order?: Prisma.IntFieldUpdateOperationsInput | number
   isActive?: Prisma.BoolFieldUpdateOperationsInput | boolean
   createdAt?: Prisma.DateTimeFieldUpdateOperationsInput | Date | string
@@ -367,7 +367,7 @@ export type GalleryItemUncheckedUpdateManyInput = {
   id?: Prisma.StringFieldUpdateOperationsInput | string
   mediaUrl?: Prisma.StringFieldUpdateOperationsInput | string
   caption?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
-  type?: Prisma.EnumGalleryTypeFieldUpdateOperationsInput | $Enums.GalleryType
+  descriptin?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
   order?: Prisma.IntFieldUpdateOperationsInput | number
   isActive?: Prisma.BoolFieldUpdateOperationsInput | boolean
   createdAt?: Prisma.DateTimeFieldUpdateOperationsInput | Date | string
@@ -378,7 +378,7 @@ export type GalleryItemCountOrderByAggregateInput = {
   id?: Prisma.SortOrder
   mediaUrl?: Prisma.SortOrder
   caption?: Prisma.SortOrder
-  type?: Prisma.SortOrder
+  descriptin?: Prisma.SortOrder
   order?: Prisma.SortOrder
   isActive?: Prisma.SortOrder
   createdAt?: Prisma.SortOrder
@@ -393,7 +393,7 @@ export type GalleryItemMaxOrderByAggregateInput = {
   id?: Prisma.SortOrder
   mediaUrl?: Prisma.SortOrder
   caption?: Prisma.SortOrder
-  type?: Prisma.SortOrder
+  descriptin?: Prisma.SortOrder
   order?: Prisma.SortOrder
   isActive?: Prisma.SortOrder
   createdAt?: Prisma.SortOrder
@@ -404,7 +404,7 @@ export type GalleryItemMinOrderByAggregateInput = {
   id?: Prisma.SortOrder
   mediaUrl?: Prisma.SortOrder
   caption?: Prisma.SortOrder
-  type?: Prisma.SortOrder
+  descriptin?: Prisma.SortOrder
   order?: Prisma.SortOrder
   isActive?: Prisma.SortOrder
   createdAt?: Prisma.SortOrder
@@ -415,17 +415,13 @@ export type GalleryItemSumOrderByAggregateInput = {
   order?: Prisma.SortOrder
 }
 
-export type EnumGalleryTypeFieldUpdateOperationsInput = {
-  set?: $Enums.GalleryType
-}
-
 
 
 export type GalleryItemSelect<ExtArgs extends runtime.Types.Extensions.InternalArgs = runtime.Types.Extensions.DefaultArgs> = runtime.Types.Extensions.GetSelect<{
   id?: boolean
   mediaUrl?: boolean
   caption?: boolean
-  type?: boolean
+  descriptin?: boolean
   order?: boolean
   isActive?: boolean
   createdAt?: boolean
@@ -436,7 +432,7 @@ export type GalleryItemSelectCreateManyAndReturn<ExtArgs extends runtime.Types.E
   id?: boolean
   mediaUrl?: boolean
   caption?: boolean
-  type?: boolean
+  descriptin?: boolean
   order?: boolean
   isActive?: boolean
   createdAt?: boolean
@@ -447,7 +443,7 @@ export type GalleryItemSelectUpdateManyAndReturn<ExtArgs extends runtime.Types.E
   id?: boolean
   mediaUrl?: boolean
   caption?: boolean
-  type?: boolean
+  descriptin?: boolean
   order?: boolean
   isActive?: boolean
   createdAt?: boolean
@@ -458,14 +454,14 @@ export type GalleryItemSelectScalar = {
   id?: boolean
   mediaUrl?: boolean
   caption?: boolean
-  type?: boolean
+  descriptin?: boolean
   order?: boolean
   isActive?: boolean
   createdAt?: boolean
   updatedAt?: boolean
 }
 
-export type GalleryItemOmit<ExtArgs extends runtime.Types.Extensions.InternalArgs = runtime.Types.Extensions.DefaultArgs> = runtime.Types.Extensions.GetOmit<"id" | "mediaUrl" | "caption" | "type" | "order" | "isActive" | "createdAt" | "updatedAt", ExtArgs["result"]["galleryItem"]>
+export type GalleryItemOmit<ExtArgs extends runtime.Types.Extensions.InternalArgs = runtime.Types.Extensions.DefaultArgs> = runtime.Types.Extensions.GetOmit<"id" | "mediaUrl" | "caption" | "descriptin" | "order" | "isActive" | "createdAt" | "updatedAt", ExtArgs["result"]["galleryItem"]>
 
 export type $GalleryItemPayload<ExtArgs extends runtime.Types.Extensions.InternalArgs = runtime.Types.Extensions.DefaultArgs> = {
   name: "GalleryItem"
@@ -474,7 +470,7 @@ export type $GalleryItemPayload<ExtArgs extends runtime.Types.Extensions.Interna
     id: string
     mediaUrl: string
     caption: string | null
-    type: $Enums.GalleryType
+    descriptin: string | null
     order: number
     isActive: boolean
     createdAt: Date
@@ -905,7 +901,7 @@ export interface GalleryItemFieldRefs {
   readonly id: Prisma.FieldRef<"GalleryItem", 'String'>
   readonly mediaUrl: Prisma.FieldRef<"GalleryItem", 'String'>
   readonly caption: Prisma.FieldRef<"GalleryItem", 'String'>
-  readonly type: Prisma.FieldRef<"GalleryItem", 'GalleryType'>
+  readonly descriptin: Prisma.FieldRef<"GalleryItem", 'String'>
   readonly order: Prisma.FieldRef<"GalleryItem", 'Int'>
   readonly isActive: Prisma.FieldRef<"GalleryItem", 'Boolean'>
   readonly createdAt: Prisma.FieldRef<"GalleryItem", 'DateTime'>

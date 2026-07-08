@@ -177,23 +177,6 @@ export type IntWithAggregatesFilter<$PrismaModel = never> = {
   _max?: Prisma.NestedIntFilter<$PrismaModel>
 }
 
-export type EnumGalleryTypeFilter<$PrismaModel = never> = {
-  equals?: $Enums.GalleryType | Prisma.EnumGalleryTypeFieldRefInput<$PrismaModel>
-  in?: $Enums.GalleryType[] | Prisma.ListEnumGalleryTypeFieldRefInput<$PrismaModel>
-  notIn?: $Enums.GalleryType[] | Prisma.ListEnumGalleryTypeFieldRefInput<$PrismaModel>
-  not?: Prisma.NestedEnumGalleryTypeFilter<$PrismaModel> | $Enums.GalleryType
-}
-
-export type EnumGalleryTypeWithAggregatesFilter<$PrismaModel = never> = {
-  equals?: $Enums.GalleryType | Prisma.EnumGalleryTypeFieldRefInput<$PrismaModel>
-  in?: $Enums.GalleryType[] | Prisma.ListEnumGalleryTypeFieldRefInput<$PrismaModel>
-  notIn?: $Enums.GalleryType[] | Prisma.ListEnumGalleryTypeFieldRefInput<$PrismaModel>
-  not?: Prisma.NestedEnumGalleryTypeWithAggregatesFilter<$PrismaModel> | $Enums.GalleryType
-  _count?: Prisma.NestedIntFilter<$PrismaModel>
-  _min?: Prisma.NestedEnumGalleryTypeFilter<$PrismaModel>
-  _max?: Prisma.NestedEnumGalleryTypeFilter<$PrismaModel>
-}
-
 export type EnumUserRoleFilter<$PrismaModel = never> = {
   equals?: $Enums.UserRole | Prisma.EnumUserRoleFieldRefInput<$PrismaModel>
   in?: $Enums.UserRole[] | Prisma.ListEnumUserRoleFieldRefInput<$PrismaModel>
@@ -427,23 +410,6 @@ export type NestedFloatFilter<$PrismaModel = never> = {
   gt?: number | Prisma.FloatFieldRefInput<$PrismaModel>
   gte?: number | Prisma.FloatFieldRefInput<$PrismaModel>
   not?: Prisma.NestedFloatFilter<$PrismaModel> | number
-}
-
-export type NestedEnumGalleryTypeFilter<$PrismaModel = never> = {
-  equals?: $Enums.GalleryType | Prisma.EnumGalleryTypeFieldRefInput<$PrismaModel>
-  in?: $Enums.GalleryType[] | Prisma.ListEnumGalleryTypeFieldRefInput<$PrismaModel>
-  notIn?: $Enums.GalleryType[] | Prisma.ListEnumGalleryTypeFieldRefInput<$PrismaModel>
-  not?: Prisma.NestedEnumGalleryTypeFilter<$PrismaModel> | $Enums.GalleryType
-}
-
-export type NestedEnumGalleryTypeWithAggregatesFilter<$PrismaModel = never> = {
-  equals?: $Enums.GalleryType | Prisma.EnumGalleryTypeFieldRefInput<$PrismaModel>
-  in?: $Enums.GalleryType[] | Prisma.ListEnumGalleryTypeFieldRefInput<$PrismaModel>
-  notIn?: $Enums.GalleryType[] | Prisma.ListEnumGalleryTypeFieldRefInput<$PrismaModel>
-  not?: Prisma.NestedEnumGalleryTypeWithAggregatesFilter<$PrismaModel> | $Enums.GalleryType
-  _count?: Prisma.NestedIntFilter<$PrismaModel>
-  _min?: Prisma.NestedEnumGalleryTypeFilter<$PrismaModel>
-  _max?: Prisma.NestedEnumGalleryTypeFilter<$PrismaModel>
 }
 
 export type NestedEnumUserRoleFilter<$PrismaModel = never> = {
