@@ -13,7 +13,7 @@ const registerUser = catchAsync(async (req: Request, res: Response) => {
   const result = await AuthService.registerUser(
     req.body,
   );
-  const { accessToken, refreshToken, token, ...rest } = result;
+  const { token, ...rest } = result;
 
   tokenUtils.setBetterAuthSessionCookie(res, token as string);
 
