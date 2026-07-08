@@ -19,7 +19,8 @@ model User {
   sessions           Session[]
   accounts           Account[]
 
-  committee Committee? @relation(fields: [committeeId], references: [id])
+  committee       Committee?       @relation(fields: [committeeId], references: [id])
+  contactMessages ContactMessage[]
 
   @@unique([email])
   @@map("user")

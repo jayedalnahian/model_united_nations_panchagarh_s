@@ -10,6 +10,7 @@
  */
 export type * from './models/Announcement.js'
 export type * from './models/Committee.js'
+export type * from './models/ContactMessage.js'
 export type * from './models/FaqItem.js'
 export type * from './models/GalleryItem.js'
 export type * from './models/Highlight.js'

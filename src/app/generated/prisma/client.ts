@@ -52,6 +52,11 @@ export type Announcement = Prisma.AnnouncementModel
  */
 export type Committee = Prisma.CommitteeModel
 /**
+ * Model ContactMessage
+ * 
+ */
+export type ContactMessage = Prisma.ContactMessageModel
+/**
  * Model FaqItem
  * 
  */

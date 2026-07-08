@@ -53,6 +53,7 @@ export const AnyNull = runtime.AnyNull
 export const ModelName = {
   Announcement: 'Announcement',
   Committee: 'Committee',
+  ContactMessage: 'ContactMessage',
   FaqItem: 'FaqItem',
   GalleryItem: 'GalleryItem',
   Highlight: 'Highlight',
@@ -110,6 +111,19 @@ export const CommitteeScalarFieldEnum = {
 } as const
 
 export type CommitteeScalarFieldEnum = (typeof CommitteeScalarFieldEnum)[keyof typeof CommitteeScalarFieldEnum]
+
+
+export const ContactMessageScalarFieldEnum = {
+  id: 'id',
+  userId: 'userId',
+  name: 'name',
+  email: 'email',
+  message: 'message',
+  isResolved: 'isResolved',
+  createdAt: 'createdAt'
+} as const
+
+export type ContactMessageScalarFieldEnum = (typeof ContactMessageScalarFieldEnum)[keyof typeof ContactMessageScalarFieldEnum]
 
 
 export const FaqItemScalarFieldEnum = {

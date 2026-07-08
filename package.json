@@ -26,6 +26,7 @@
     "@prisma/adapter-pg": "^7.4.0",
     "@prisma/client": "^7.4.0",
     "@prisma/client-runtime-utils": "^7.4.0",
+    "Model United Nations Panchagarh-s": "link:",
     "better-auth": "^1.4.18",
     "cookie-parser": "^1.4.7",
     "cors": "^2.8.6",
